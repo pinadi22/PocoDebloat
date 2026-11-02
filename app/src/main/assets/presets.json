@@ -892,8 +892,8 @@
   },
   {
    "id": "com.android.htmlviewer",
-   "level": "SAFE",
-   "note": "HTML Viewer"
+   "level": "DANGER",
+   "note": "Memuat provider CloudSettings yang dipakai Recents POCO Launcher; dihapus = launcher macet"
   },
   {
    "id": "com.android.protips",

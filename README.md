@@ -2,6 +2,16 @@
 
 Aplikasi Android untuk menghapus (atau menonaktifkan) bloatware di POCO X3 Pro (MIUI 13 / Android 12) langsung dari HP, tanpa kabel dan tanpa PC. Aplikasi memakai [Shizuku](https://github.com/RikkaApps/Shizuku) untuk menjalankan perintah dengan hak akses `adb shell`.
 
+## Peringatan
+
+Dipakai dengan risiko sendiri. Daftar preset (`presets.json`) disusun dari pengetahuan umum dan diuji pada satu perangkat (POCO X3 Pro, MIUI Global 13.0.5), jadi belum tentu cocok untuk perangkat atau versi MIUI lain. Label **Aman** bukan jaminan: MIUI kadang menitipkan komponen penting di paket yang namanya terdengar sepele (contoh nyata: `com.android.htmlviewer` memuat provider yang dibutuhkan layar Recents).
+
+Saran: hapus sedikit-sedikit, uji setelah tiap batch, dan simpan daftar yang dihapus. Kalau ada yang bermasalah, buka tab **Dipulihkan**. Kalau launcher macet dan layar tidak bisa dipakai, buka aplikasi lewat Setelan > Aplikasi > Kelola aplikasi, atau pulihkan lewat ADB/Shizuku:
+
+```
+cmd package install-existing --user 0 <nama.paket>
+```
+
 ## Cara membangun
 
 1. Buka folder `PocoDebloat` di Android Studio (versi terbaru, JDK 17).
