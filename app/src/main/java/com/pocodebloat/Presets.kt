@@ -9,7 +9,11 @@ object Presets {
 
     /** Paket dengan awalan ini selalu dianggap berbahaya untuk dihapus. */
     private val dangerPrefixes = listOf(
-        "com.android.providers.",
+        "com.android.",
+        "com.google.android.overlay",
+        "com.google.android.trichromelibrary",
+        "com.google.android.networkstack",
+        "com.google.android.modulemetadata",
         "com.qualcomm.",
         "com.qti.",
         "org.codeaurora.",

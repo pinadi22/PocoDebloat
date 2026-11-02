@@ -1,5 +1,6 @@
 package com.pocodebloat.ui
 
+import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -41,6 +42,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalClipboardManager
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -186,6 +190,20 @@ private fun SearchAndFilters(vm: MainViewModel) {
                     label = { Text(level.label) }
                 )
             }
+        }
+
+        val context = LocalContext.current
+        val clipboard = LocalClipboardManager.current
+        val shown = vm.visible
+        TextButton(
+            onClick = {
+                val text = shown.joinToString("\n") { "${it.pkg} | ${it.label} | ${it.level.label}" }
+                clipboard.setText(AnnotatedString(text))
+                Toast.makeText(context, "${shown.size} baris disalin", Toast.LENGTH_SHORT).show()
+            },
+            enabled = shown.isNotEmpty()
+        ) {
+            Text("Salin daftar (${shown.size})")
         }
     }
 }
