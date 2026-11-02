@@ -56,4 +56,8 @@ Penghapusan hanya berlaku untuk user 0. File aplikasinya tetap ada di partisi si
 
 - **Perintah ditolak di MIUI:** aktifkan **USB debugging (Security settings)** di Developer options.
 - **Sistem aneh setelah menghapus sesuatu:** buka tab Dipulihkan dan pulihkan paketnya. Kalau aplikasi tidak bisa dibuka lagi, jalankan dari PC: `adb shell cmd package install-existing --user 0 <paket>`.
-- Aplikasi ini belum dicoba dikompilasi di perangkat nyata. Kalau ada error build, kirim pesan errornya.
+- Aplikasi ini diuji di POCO X3 Pro (MIUI Global 13.0.5, Android 12). Kalau menemukan paket yang membuat sistem bermasalah di perangkatmu, silakan buka Issue di GitHub beserta nama paketnya supaya daftar preset bisa diperbaiki.
+
+## Lisensi
+
+MIT, lihat berkas [LICENSE](LICENSE).
