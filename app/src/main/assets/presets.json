@@ -372,8 +372,8 @@
   },
   {
    "id": "com.google.android.apps.subscriptions.red",
-   "level": "SAFE",
-   "note": "Google One"
+   "level": "CAUTION",
+   "note": "Google One, jangan dihapus kalau punya langganan penyimpanan (pengelolaan langganan bisa terganggu)"
   },
   {
    "id": "com.google.android.apps.podcasts",

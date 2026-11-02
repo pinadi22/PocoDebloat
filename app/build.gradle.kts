@@ -12,8 +12,8 @@ android {
         applicationId = "com.pocodebloat"
         minSdk = 26
         targetSdk = 34
-        versionCode = 3
-        versionName = "1.0.2"
+        versionCode = 4
+        versionName = "1.0.3"
     }
 
     // Kunci tetap supaya APK baru bisa dipasang langsung di atas versi lama
