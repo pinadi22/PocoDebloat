@@ -198,12 +198,12 @@
   {
    "id": "com.miui.daemon",
    "level": "CAUTION",
-   "note": "MIUI Daemon, pemantau sistem"
+   "note": "MIUI Daemon, pemantau sistem (kalau dinonaktifkan, bisa aktif lagi sendiri)"
   },
   {
    "id": "com.xiaomi.joyose",
    "level": "CAUTION",
-   "note": "Joyose, terkait performa dan thermal"
+   "note": "Joyose; ada laporan HP lebih panas saat main game setelah dihapus"
   },
   {
    "id": "com.xiaomi.simactivate.service",
@@ -223,17 +223,17 @@
   {
    "id": "com.miui.personalassistant",
    "level": "CAUTION",
-   "note": "App Vault / layar kiri launcher"
+   "note": "App Vault; ada laporan pemilih widget rusak setelah dihapus"
   },
   {
    "id": "com.miui.securityadd",
-   "level": "CAUTION",
-   "note": "Tambahan Security Center"
+   "level": "DANGER",
+   "note": "Pelengkap Security Center; dilaporkan bisa bootloop"
   },
   {
    "id": "com.miui.guardprovider",
-   "level": "CAUTION",
-   "note": "Penyedia pemindai keamanan"
+   "level": "DANGER",
+   "note": "Komponen keamanan MIUI; dilaporkan bisa bootloop"
   },
   {
    "id": "com.miui.antispam",
@@ -243,7 +243,7 @@
   {
    "id": "com.miui.powerkeeper",
    "level": "CAUTION",
-   "note": "Pengelola baterai"
+   "note": "Baterai dan performa; ada laporan baterai lebih boros setelah dihapus"
   },
   {
    "id": "com.android.mms",
@@ -673,12 +673,12 @@
   {
    "id": "com.miui.miwallpaper",
    "level": "CAUTION",
-   "note": "Layanan wallpaper MIUI"
+   "note": "Layanan wallpaper; ada laporan aplikasi Tema gagal setelah dinonaktifkan"
   },
   {
    "id": "com.miui.contentcatcher",
    "level": "CAUTION",
-   "note": "Content catcher MIUI"
+   "note": "Content catcher MIUI (kalau dinonaktifkan, bisa aktif lagi sendiri)"
   },
   {
    "id": "com.miui.catcherpatch",
@@ -698,7 +698,7 @@
   {
    "id": "com.miui.audiomonitor",
    "level": "CAUTION",
-   "note": "Pemantau audio / perlindungan pendengaran"
+   "note": "Pemantau audio / perlindungan pendengaran (kalau dinonaktifkan, bisa aktif lagi sendiri)"
   },
   {
    "id": "com.miui.securitycore",
@@ -708,7 +708,7 @@
   {
    "id": "com.miui.voicetrigger",
    "level": "CAUTION",
-   "note": "Pemicu suara"
+   "note": "Pemicu suara (kalau dinonaktifkan, bisa aktif lagi sendiri)"
   },
   {
    "id": "com.miui.wmsvc",
@@ -737,13 +737,13 @@
   },
   {
    "id": "com.miui.packageinstaller",
-   "level": "CAUTION",
-   "note": "Pemasang paket MIUI"
+   "level": "DANGER",
+   "note": "Pemasang paket MIUI; dilaporkan bisa bootloop"
   },
   {
    "id": "com.miui.global.packageinstaller",
    "level": "CAUTION",
-   "note": "Pemasang paket MIUI global"
+   "note": "Pemasang paket MIUI global; ada laporan bootloop setelah dihapus"
   },
   {
    "id": "com.miui.notification",
@@ -762,8 +762,8 @@
   },
   {
    "id": "com.xiaomi.account",
-   "level": "CAUTION",
-   "note": "Akun Mi"
+   "level": "DANGER",
+   "note": "Akun Xiaomi; dilaporkan bisa bootloop"
   },
   {
    "id": "com.xiaomi.xmsf",
@@ -772,18 +772,18 @@
   },
   {
    "id": "com.xiaomi.market",
-   "level": "CAUTION",
-   "note": "Xiaomi Market"
+   "level": "DANGER",
+   "note": "Xiaomi Market; dilaporkan bisa bootloop"
   },
   {
    "id": "com.xiaomi.finddevice",
-   "level": "CAUTION",
-   "note": "Cari perangkat"
+   "level": "DANGER",
+   "note": "Cari perangkat; dilaporkan bisa bootloop"
   },
   {
    "id": "com.xiaomi.micloud.sdk",
    "level": "CAUTION",
-   "note": "SDK Mi Cloud"
+   "note": "SDK Mi Cloud; ada laporan Galeri berhenti berfungsi setelah dihapus"
   },
   {
    "id": "com.xiaomi.bluetooth",
@@ -1003,7 +1003,7 @@
   {
    "id": "com.xiaomi.mircs",
    "level": "CAUTION",
-   "note": "RCS Xiaomi"
+   "note": "RCS Xiaomi (kalau dinonaktifkan, bisa aktif lagi sendiri)"
   },
   {
    "id": "com.xiaomi.miaudiovisual",
@@ -1078,7 +1078,7 @@
   {
    "id": "com.xiaomi.xmsfkeeper",
    "level": "CAUTION",
-   "note": "Penjaga Xiaomi Service Framework"
+   "note": "Penjaga Xiaomi Service Framework (kalau dinonaktifkan, bisa aktif lagi sendiri)"
   },
   {
    "id": "com.modemdebug",
@@ -1092,8 +1092,8 @@
   },
   {
    "id": "com.android.updater",
-   "level": "CAUTION",
-   "note": "Pembaruan sistem (OTA)"
+   "level": "DANGER",
+   "note": "Pembaruan sistem; dilaporkan bisa bootloop"
   },
   {
    "id": "com.android.storagemanager",
@@ -1154,6 +1154,66 @@
    "id": "com.miui.core.internal.editor.services",
    "level": "DANGER",
    "note": "Layanan inti MIUI"
+  },
+  {
+   "id": "com.xiaomi.metoknlp",
+   "level": "CAUTION",
+   "note": "Layanan lokasi jaringan. Daftar komunitas menyebut aman (diuji di Mi 11 Pro), belum diuji di POCO X3 Pro"
+  },
+  {
+   "id": "com.miui.aod",
+   "level": "CAUTION",
+   "note": "Always-on display. Daftar komunitas menyebut aman (diuji di Mi 11 Pro), belum diuji di POCO X3 Pro"
+  },
+  {
+   "id": "com.xiaomi.aiasst.vision",
+   "level": "CAUTION",
+   "note": "AI Translate / terjemahan layar. Daftar komunitas menyebut aman (diuji di Mi 11 Pro), belum diuji di POCO X3 Pro"
+  },
+  {
+   "id": "com.xiaomi.ab",
+   "level": "CAUTION",
+   "note": "Layanan A/B test Xiaomi. Daftar komunitas menyebut aman (diuji di Mi 11 Pro), belum diuji di POCO X3 Pro"
+  },
+  {
+   "id": "com.xiaomi.aiasst.service",
+   "level": "CAUTION",
+   "note": "Asisten AI Xiaomi. Daftar komunitas menyebut aman (diuji di Mi 11 Pro), belum diuji di POCO X3 Pro"
+  },
+  {
+   "id": "com.xiaomi.migameservice",
+   "level": "CAUTION",
+   "note": "Layanan game Xiaomi. Daftar komunitas menyebut aman (diuji di Mi 11 Pro), belum diuji di POCO X3 Pro"
+  },
+  {
+   "id": "com.xiaomi.miplay_client",
+   "level": "CAUTION",
+   "note": "MiPlay. Daftar komunitas menyebut aman (diuji di Mi 11 Pro), belum diuji di POCO X3 Pro"
+  },
+  {
+   "id": "com.xiaomi.mirror",
+   "level": "CAUTION",
+   "note": "Mirror / lintas perangkat. Daftar komunitas menyebut aman (diuji di Mi 11 Pro), belum diuji di POCO X3 Pro"
+  },
+  {
+   "id": "com.miui.maintenancemode",
+   "level": "CAUTION",
+   "note": "Mode perbaikan. Daftar komunitas menyebut aman (diuji di Mi 11 Pro), belum diuji di POCO X3 Pro"
+  },
+  {
+   "id": "com.miui.vsimcore",
+   "level": "CAUTION",
+   "note": "Layanan SIM virtual. Daftar komunitas menyebut aman (diuji di Mi 11 Pro), belum diuji di POCO X3 Pro"
+  },
+  {
+   "id": "com.miui.voiceassist",
+   "level": "CAUTION",
+   "note": "Asisten suara Xiaomi. Daftar komunitas menyebut aman (diuji di Mi 11 Pro), belum diuji di POCO X3 Pro"
+  },
+  {
+   "id": "com.mobiletools.systemhelper",
+   "level": "CAUTION",
+   "note": "Alat bantu sistem. Daftar komunitas menyebut aman (diuji di Mi 11 Pro), belum diuji di POCO X3 Pro"
   }
  ]
 }

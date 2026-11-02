@@ -12,6 +12,10 @@ Saran: hapus sedikit-sedikit, uji setelah tiap batch, dan simpan daftar yang dih
 cmd package install-existing --user 0 <nama.paket>
 ```
 
+## Referensi
+
+Sebagian label diperkuat dengan daftar komunitas [MIUI 13/14 bloatware apps](https://gist.github.com/mcxiaoke/ade05718f590bcd574b807c4706a00b1) oleh mcxiaoke (diuji di Mi 11 Pro). Paket yang hanya disebut aman di daftar itu diberi label Hati-hati di sini karena belum diuji di POCO X3 Pro.
+
 ## Cara membangun
 
 1. Buka folder `PocoDebloat` di Android Studio (versi terbaru, JDK 17).
