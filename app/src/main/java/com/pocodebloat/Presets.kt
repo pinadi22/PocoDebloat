@@ -38,6 +38,9 @@ object Presets {
 
     fun classify(pkg: String, presets: Map<String, Preset>): Preset {
         presets[pkg]?.let { return it }
+        if (pkg.contains("overlay", ignoreCase = true) || pkg.startsWith("android.")) {
+            return Preset(Level.DANGER, "Overlay / resource sistem")
+        }
         if (pkg == "android" || dangerPrefixes.any { pkg.startsWith(it) }) {
             return Preset(Level.DANGER, "Komponen inti sistem")
         }
